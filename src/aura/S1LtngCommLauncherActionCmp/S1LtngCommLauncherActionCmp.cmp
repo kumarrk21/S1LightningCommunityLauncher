@@ -1,0 +1,21 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickAction" access="global" controller="S1LightningCommunityLauncherController" >
+
+	 <!-- Private Attributes -->
+	 <aura:attribute name="communityURL" type="String" default="" access="GLOBAL"></aura:attribute>
+	 <aura:attribute name="commLandingPage" type="String" default="" access="GLOBAL"></aura:attribute>
+	 <aura:attribute name="isInited" type="Boolean" default="false"></aura:attribute>
+	 <aura:attribute name="isError" type="Boolean" default="false"></aura:attribute>
+    <aura:attribute name="errMessage" type="String" default=""></aura:attribute>
+	 <!-- Event Handlers -->
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"></aura:handler>
+
+    <aura:if isTrue="{!v.isInited}">
+    	<c:S1LightningCommunityLauncher communityURL="{!v.communityURL}" commLandingPage="{!v.commLandingPage}"/>
+    </aura:if>
+
+    <aura:if isTrue="{!v.isError}">
+    	<p>Error in calling generating access token : </p>
+    	<p>{!v.errMessage}</p>
+    </aura:if>
+
+</aura:component>

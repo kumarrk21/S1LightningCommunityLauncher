@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>S1LightningCommunityLauncher</members>
-		<name>AuraDefinitionBundle</name>
-	</types>
-	<types>
 		<members>S1LightningCommunityLauncherController</members>
 		<members>S1LtngCommunityLauncherControllerTest</members>
 		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>S1LightningCommunityLauncher</members>
+		<members>S1LtngCommLauncherActionCmp</members>
+		<name>AuraDefinitionBundle</name>
+	</types>
+	<types>
+		<members>S1LtngCommunityLauncher__mdt</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>S1LtngCommunityLauncher__mdt-S1LtngCommunityLauncher Layout</members>
+		<name>Layout</name>
 	</types>
 	<version>40.0</version>
 </Package>

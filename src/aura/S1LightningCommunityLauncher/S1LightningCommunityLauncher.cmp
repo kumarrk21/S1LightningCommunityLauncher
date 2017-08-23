@@ -1,8 +1,9 @@
-<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" controller="S1LightningCommunityLauncherController" >
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="S1LightningCommunityLauncherController" >
+<!-- Global Attributes -->
 	 <aura:attribute name="communityURL" type="String" default="" access="GLOBAL"></aura:attribute>
 	 <aura:attribute name="commLandingPage" type="String" default="" access="GLOBAL"></aura:attribute>
 
-	<!-- Private Attributes -->
+<!-- Private Attributes -->
     <aura:attribute name="accessToken" type="Integer" default=""></aura:attribute>
     <aura:attribute name="showLaunchButton" type="Boolean" default="false"></aura:attribute>
     <aura:attribute name="isError" type="Boolean" default="false"></aura:attribute>
