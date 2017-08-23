@@ -1,0 +1,4 @@
+<design:component >
+	<design:attribute name="communityURL" label="Community URL" description="URL for the community"/>
+    <design:attribute name="commLandingPage" label="Comm Landing Page" description="URL for the community landing page"/>
+</design:component>
